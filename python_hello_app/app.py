@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     """return hello world text in bold"""
-    return '<p><b>Hello World Python!<b>🐉</p>'
+    return '<br> <center><p><b>Hello World Python!</b>🐉</p></center>'
     
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=5000)
