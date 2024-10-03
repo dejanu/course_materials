@@ -5,7 +5,7 @@ Materials for training
 ## First app
 * A minimal [Flask](https://flask.palletsprojects.com/en/3.0.x/quickstart/#a-minimal-application) + Redis (can be used as a database/cache/streaming-engine/message broker) [docs here](https://github.com/dejanu/course_materials/tree/main/python_hello_app).
 
-### Requirements
+### ToDos
 
 * Create a Dockerfile (explore [hadoling] linter: `docker run --rm -i hadolint/hadolint < Dockerfile`)
 * Build and push the image to [docker registry](https://hub.docker.com/) (explore a scanner like [trivy](https://github.com/aquasecurity/trivy))
@@ -24,3 +24,7 @@ Materials for training
 
 
 
+## Usefull links
+
+* Remember that you can refer to the official [k8s documentation](https://kubernetes.io/docs/home/)
+* Gist with K8S upgrade steps 👉 [here](https://gist.github.com/dejanu/89ec2565d3a923a368f5dc046259e2b9)
