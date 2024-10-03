@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 # encoding: utf-8
 import json
+import os
 from flask import Flask
 from redis import Redis
 
-#redis on localhost
+
+# Get Redis connection details from environment variables
+redis_host = os.getenv('REDIS_HOST', 'localhost')
+redis_port = int(os.getenv('REDIS_PORT', 6379))
+
 redis = Redis(host='redis', port=6379)
 app = Flask(__name__)
 

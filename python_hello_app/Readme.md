@@ -8,3 +8,27 @@ export FLASK_APP=main.py
 export FLASK_RUN_PORT=5555
 flask run
 ```
+
+# Build flask app:
+
+```bash
+docker build -t dejanualex/flaskapp:1.0 .
+```
+
+# Compose flask-app and redis
+
+* Start:
+```bash
+docker-compose -f docker-compose.yaml up -d --build
+```
+* Stop:
+```bash
+docker-compose down --rmi all --volumes --remove-orphans
+```
+
+# Kubernetes flask-app and redis
+
+```bash
+kubectl apply -f k8s_deploy_stack
+kubectl expose deploy flask-app --name=flask-svc --type="LoadBalancer" --port=5555 --target-port=5000
+```
