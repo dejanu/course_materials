@@ -51,5 +51,5 @@ Materials for training and for **container-to-pod** masterclass (Container to Po
 
 * Save slides on local
 ```bash
-curl https://raw.githubusercontent.com/dejanu/container-to-pod/main/masterclass_slides.key -o masterclass_slides.key
+curl https://raw.githubusercontent.com/dejanu/course_materials/main/masterclass_slides.key -o masterclass_slides.key
 ```
