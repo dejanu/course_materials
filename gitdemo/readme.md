@@ -66,6 +66,6 @@ git commit --amend # interactive
 ```bash
 # bring feat/git to main
 git checkout main
-git merge feat/git
-
+git merge feat/git # keep original commits from feat/git intact
+git rebase feat/git # rewrite commit history
 ```
