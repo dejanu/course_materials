@@ -32,3 +32,19 @@ git commit -m 'mesage here`
 # send changes to remote repo
 git push
 ```
+
+### Scenarios
+
+* UNDO
+
+```bash
+# local undo commits and PRESERVE changes
+git reset --soft HEAD^  # last commit
+git reset --soft HEAD~2 # last 2 commits
+
+# local undo commits and REMOVE changes
+git reset --hard HEAD~1
+
+# public undo commit aka rewrite history aka add new commits to reverse the effect of some earlier commits
+git rever <commit>
+```
