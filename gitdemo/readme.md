@@ -6,6 +6,8 @@
 
 If two separate files located in two different directories have exactly the same content, Git stores a sole copy of that content as a `blob` (binary large objects) within the object store.
 
+Nice video [Linus Torvalds & git](https://www.youtube.com/watch?v=idLyobOhtO4)
+
 ### Git Transport
 
 ![gittransport](git_transport.png)
@@ -49,9 +51,12 @@ git reset --hard HEAD~1
 git revert <commit>
 ```
 
-* SQUASHING ... combine multiple commits into one to cleanup commit history
+* Rewriting history ...  to cleanup commit history
 
 ```bash
-# manually interactive rebase
-git rebase -i
+# SQUASHING: manually interactive rebase aka combine multiple commits into one
+git rebase -i HEAD~3 # last 3 commits
+
+# AMEND aka update the most recent commit message
+git commit --amend
 ```
