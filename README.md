@@ -2,8 +2,12 @@
 Materials for training and for **container-to-pod** masterclass (Container to Pod: A 1-Hour Expedition)
 
 
-## First app
+
+## Content
+
 * A minimal [Flask](https://flask.palletsprojects.com/en/3.0.x/quickstart/#a-minimal-application) + Redis (can be used as a database/cache/streaming-engine/message broker) [docs here](https://github.com/dejanu/course_materials/tree/main/python_hello_app).
+
+* Everything you need to know about Git [gitdemo](https://github.com/dejanu/course_materials/tree/main/gitdemo#readme)
 
 ### ToDos
 
