@@ -58,5 +58,14 @@ git revert <commit>
 git rebase -i HEAD~3 # last 3 commits
 
 # AMEND aka update the most recent commit message
-git commit --amend
+git commit --amend # interactive
+```
+
+* Bringin changes to your branch
+
+```bash
+# bring feat/git to main
+git checkout main
+git merge feat/git
+
 ```
