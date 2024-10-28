@@ -9,4 +9,4 @@ If two separate files located in two different directories have exactly the same
 ### Git Transport
 
 
-![gittransport](https://github.com/dejanu/course_materials/blob/feat/git/gitdemo/gitdemo/git_transport.png)
+![gittransport](./gitdemo/git_transport.png)
