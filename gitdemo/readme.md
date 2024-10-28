@@ -46,5 +46,12 @@ git reset --soft HEAD~2 # last 2 commits
 git reset --hard HEAD~1
 
 # public undo commit aka rewrite history aka add new commits to reverse the effect of some earlier commits
-git rever <commit>
+git revert <commit>
+```
+
+* SQUASHING ... combine multiple commits into one to cleanup commit history
+
+```bash
+# manually interactive rebase
+git rebase -i
 ```
