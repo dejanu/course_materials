@@ -10,7 +10,7 @@ class FlaskAppTestCase (unittest.TestCase):
         self.client = app.test_client()
 
     def test_endpoint(self):
-        """ /test endpoint"""
+        """/test endpoint"""
         response =  self.client.get('/test')
         self.assertEqual(response.status_code, 200)
 

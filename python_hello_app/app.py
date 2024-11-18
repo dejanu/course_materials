@@ -24,7 +24,6 @@ def index():
 def test():
     """Endpoint for unittesting"""
     return jsonify({"message": f"Test endpoint..."})
-
     
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=5000)
