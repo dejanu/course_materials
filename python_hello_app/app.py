@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # encoding: utf-8
-import json
 import os
 from flask import Flask
 from redis import Redis
@@ -16,7 +15,8 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     """Count and display no of page hits"""
-    redis.incr('hits') # inc the value of key by amount, if no key exists, the value will be initialized as
+    # inc the value of key by amount, if no key exists, the value will be initialized
+    redis.incr('hits')
     counter =  str(redis.get('hits'),'utf-8')
     return f'<br> <center><p><b>Hello view no :{counter}</b>🐉</p></center>'
     
