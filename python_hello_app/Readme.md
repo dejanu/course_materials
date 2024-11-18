@@ -8,7 +8,15 @@ export FLASK_APP=main.py
 export FLASK_RUN_PORT=5555
 flask run
 ```
+# Test app:
 
+```bash
+# lint
+pylint $(git ls-files '*.py')
+
+# unittest
+./test_app.py
+```
 # Build flask app:
 
 ```bash
