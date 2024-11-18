@@ -1,5 +1,7 @@
+#!/usr/bin/env python3
+
 import unittest
-from app import app # import Flask app
+from python_hello_app.app import app # tests should be run from root of the repo
 
 class FlaskAppTestCase (unittest.TestCase):
     def setUp(self):
