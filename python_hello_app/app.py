@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # encoding: utf-8
 import os
-from flask import Flask
+from flask import Flask, jsonify
 from redis import Redis
 
 
@@ -19,6 +19,12 @@ def index():
     redis.incr('hits')
     counter =  str(redis.get('hits'),'utf-8')
     return f'<br> <center><p><b>Hello view no :{counter}</b>🐉</p></center>'
+
+@app.route('/test',methods=['GET'])
+def test():
+    """Endpoint for unittesting"""
+    return jsonify({"message": f"Test endpoint..."})
+
     
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=5000)
