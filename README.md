@@ -29,6 +29,7 @@ Materials for training and for **container-to-pod** masterclass (Container to Po
 * Remember that you can refer to the official [k8s documentation](https://kubernetes.io/docs/home/)
 * Gist with K8S upgrade steps 👉 [here](https://gist.github.com/dejanu/89ec2565d3a923a368f5dc046259e2b9)
 * Hands-on Docker and K8s labs [killercoda.com/dejanualex/](https://killercoda.com/dejanualex/)
+* [Ops Jargon](https://gist.github.com/dejanu/a761175e9972d689421cbf435bf98223) -  jargon refers to words/expressions that are used in special or technical ways by particular groups of people...OPS
 
 
 ## Articles
