@@ -28,6 +28,6 @@ jobs:
         pylint $(git ls-files '*.py')
     - name: unit-testing with unittest
       run: |
-        ./python_hello_app/test_app.py
+        pytest python_hello_app/test_app.py 
 
 
