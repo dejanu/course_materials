@@ -42,7 +42,7 @@ jobs:
         image: |
           dejanualex/course
           docker.io/dejanualex/course
-        tags:
+        tags: |
           type=schedule
           type=ref,event=branch
           type=ref,event=pr
