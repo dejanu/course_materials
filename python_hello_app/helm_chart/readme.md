@@ -6,7 +6,7 @@ A Chart is a Helm package
 * Create a chart for app
 ```bash
 helm create <chart-name>
-helm install flask-app .  # because flask dempoyment name is linked to  {{ .Release.Name }}
+helm install flask-app .  # because flask deployment name is linked to {{ .Release.Name }}
 helm list
 helm uninstall flask-app 
 ```

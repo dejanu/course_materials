@@ -3,6 +3,8 @@ name: Linting and Testing
 on:
   push:
     branches: [ "main" ]
+    tags:
+      - "v*.*.*"
   pull_request:
     branches: [ "main" ]
 
@@ -33,6 +35,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Docker meta
+      id: meta
+      uses: docker/metadata-action@v5
+      with:
+        image: |
+          dejanualex/course
+          docker.io/dejanualex/course
+        tags:
+          type=schedule
+          type=ref,event=branch
+          type=ref,event=pr
+          type=semver,pattern={{version}}
+          type=semver,pattern={{major}}.{{minor}}
+          type=semver,pattern={{major}}
+          type=sha            
     - name: Check out the repo
       uses: actions/checkout@v3
     - name: Set up QEMU
@@ -49,4 +66,5 @@ jobs:
       with:
         context: "{{defaultContext}}:python_hello_app"
         push: true
-        tags: dejanualex/test:1.0
+          tags: ${{ steps.meta.outputs.tags }}
+        # tags: dejanualex/test:1.0
