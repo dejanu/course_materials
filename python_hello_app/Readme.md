@@ -40,3 +40,7 @@ docker-compose down --rmi all --volumes --remove-orphans
 kubectl apply -f k8s_deploy_stack
 kubectl expose deploy flask-app --name=flask-svc --type="LoadBalancer" --port=5555 --target-port=5000
 ```
+
+# Helm chart
+
+* [here](https://github.com/dejanu/course_materials/blob/main/python_hello_app/helm_chart/readme.md)
