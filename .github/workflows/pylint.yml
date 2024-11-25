@@ -66,5 +66,5 @@ jobs:
       with:
         context: "{{defaultContext}}:python_hello_app"
         push: true
-          tags: ${{ steps.meta.outputs.tags }}
+        tags: ${{ steps.meta.outputs.tags }}
         # tags: dejanualex/test:1.0
