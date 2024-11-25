@@ -39,7 +39,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v5
       with:
-        image: |
+        images: |
           dejanualex/course
           docker.io/dejanualex/course
         tags: |
