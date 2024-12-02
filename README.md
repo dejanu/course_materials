@@ -35,6 +35,7 @@ Materials for training and for **container-to-pod** masterclass (Container to Po
 ## Articles
 ### WIP
 
+* [Path to observability: Prometheus|Kubernetes](https://www.linkedin.com/pulse/path-observability-prometheuskubernetes-alexandru-dejanu-ufz8c/)
 * [containers-empathic-manifesto](https://www.linkedin.com/pulse/containers-empathic-manifesto-alexandru-dejanu-1xuzf/)
 
 * [kubernetes-more-than-afterthought-part-I](https://www.linkedin.com/pulse/kubernetes-more-than-afterthought-part-i-alexandru-dejanu-tcc5f/)
