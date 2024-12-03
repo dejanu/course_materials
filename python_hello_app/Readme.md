@@ -44,3 +44,8 @@ kubectl expose deploy flask-app --name=flask-svc --type="LoadBalancer" --port=55
 # Helm chart
 
 * [here](https://github.com/dejanu/course_materials/blob/main/python_hello_app/helm_chart/readme.md)
+
+### ToDos
+
+* Create a Dockerfile (explore [hadoling] linter: `docker run --rm -i hadolint/hadolint < Dockerfile`)
+* Build and push the image to [docker registry](https://hub.docker.com/) (explore a scanner like [trivy](https://github.com/aquasecurity/trivy))
