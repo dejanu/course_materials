@@ -36,17 +36,10 @@ Materials for training and for **container-to-pod** masterclass (Container to Po
 ### WIP
 
 * [Path to observability: Prometheus|Kubernetes](https://www.linkedin.com/pulse/path-observability-prometheuskubernetes-alexandru-dejanu-ufz8c/)
+
 * [containers-empathic-manifesto](https://www.linkedin.com/pulse/containers-empathic-manifesto-alexandru-dejanu-1xuzf/)
 
 * [kubernetes-more-than-afterthought-part-I](https://www.linkedin.com/pulse/kubernetes-more-than-afterthought-part-i-alexandru-dejanu-tcc5f/)
-
-## Tidbits
-
-* Containers are often referred to as “lightweight” because they share the machine’s OS kernel. Containers are just a fancy way to run a process, not lightweight VMs, a container provides operating-system-level virtualization by abstracting the "user space".
-
-* We don't put `ssh, curl, wget` into containers we just package the app and its dependencies.
-
-* Usually, when deploying an application, you're gonna need more than one tool, a proper version for each tool, updated documentation, and not least of all proper coordination in terms of workflow.
 
 
 ## Slides
