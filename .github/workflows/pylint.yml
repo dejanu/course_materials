@@ -61,10 +61,10 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-    - name: Build and push
-      uses: docker/build-push-action@v6
-      with:
-        context: "{{defaultContext}}:python_hello_app"
-        push: true
-        tags: ${{ steps.meta.outputs.tags }}
+    # - name: Build and push
+    #   uses: docker/build-push-action@v6
+    #   with:
+    #     context: "{{defaultContext}}:python_hello_app"
+    #     push: true
+    #     tags: ${{ steps.meta.outputs.tags }}
         # tags: dejanualex/test:1.0

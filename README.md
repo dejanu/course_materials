@@ -5,33 +5,18 @@ Materials for training and for **container-to-pod** masterclass (Container to Po
 ## First app
 * A minimal [Flask](https://flask.palletsprojects.com/en/3.0.x/quickstart/#a-minimal-application) + Redis (can be used as a database/cache/streaming-engine/message broker) [docs here](https://github.com/dejanu/course_materials/tree/main/python_hello_app).
 
-### ToDos
+## Jenkins local setup
 
-* Create a Dockerfile (explore [hadoling] linter: `docker run --rm -i hadolint/hadolint < Dockerfile`)
-* Build and push the image to [docker registry](https://hub.docker.com/) (explore a scanner like [trivy](https://github.com/aquasecurity/trivy))
-* Create a deployment for the image
-
-## Docker flags
-
-* Search official images for desired <IMAGE>: `docker search --format "table {{.Name}}\t{{.StarCount}}\t{{.IsOfficial}}" <IMAGE> `
-* Output image name and tag: `docker images --format '{{.Repository}} and {{.Tag}}'`
-* Output image name, tag and elapsed time + timestamp since the image has been created: `docker images --format "{{.Repository}}:{{.Tag}} {{.CreatedSince}} --> {{.CreatedAt}}"`
-* Inspect `Cmd` for desired <IMAGE>: `docker inspect -f '{{.Config.Cmd}}' <IMAGE>`
-* Inspect `Entrypoint` for desired <IMAGE>: `docker inspect -f '{{.Config.Entrypoint}} <IMAGE>'`
-* Inspect attached containers to bridge network: `docker inspect network bridge --format "{{json .Containers }}"`
-* Inspect storage: `docker info -f 'Storage drive: {{.Driver}} and storage path {{.DockerRootDir}}'`
-* Inspect container runtimes: `docker system info --format "{{.Runtimes}}  {{.DefaultRuntime}}"`
-
-
+* A setup of master and worker node [here](https://github.com/dejanu/devops_fundamentals/tree/main/jenkins-dockercompose#readme)
 
 ## Usefull links
 
 * Remember that you can refer to the official [k8s documentation](https://kubernetes.io/docs/home/)
 * Gist with K8S upgrade steps 👉 [here](https://gist.github.com/dejanu/89ec2565d3a923a368f5dc046259e2b9)
+* Gist Docker CLI flags 👉 [here](https://gist.github.com/dejanu/12a44a086d9eed02f8770281d12de925)
 * Hands-on Docker and K8s labs [killercoda.com/dejanualex/](https://killercoda.com/dejanualex/)
 * [Ops Jargon](https://gist.github.com/dejanu/a761175e9972d689421cbf435bf98223) -  jargon refers to words/expressions that are used in special or technical ways by particular groups of people...OPS
-
-
+ 
 ## Articles
 ### WIP
 

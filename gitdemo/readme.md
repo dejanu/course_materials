@@ -80,7 +80,7 @@ git rebase -i HEAD~3 # last 3 commits
 git commit --amend # interactive
 ```
 
-* Bringin changes to your branch
+* Bring changes to your branch
 
 ```bash
 # bring feat/git to main
