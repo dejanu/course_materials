@@ -14,7 +14,6 @@ Nice video [Linus Torvalds & git](https://www.youtube.com/watch?v=idLyobOhtO4)
 
 ### Terms
 
-
 **Working tree**: a directory structure that contains all of the project's files.	
 
 **Repository (repo)**: the directory located at the top level of a working tree, hosting all of the project's files along with the version history of these files.
@@ -67,7 +66,10 @@ git reset --soft HEAD~2 # last 2 commits
 git reset --hard HEAD~1
 
 # public undo commit aka rewrite history aka add new commits to reverse the effect of some earlier commits
-git revert <commit>
+git revert <commit_sha>
+
+# revert last 2 commits
+git revert HEAD~2..HEAD
 ```
 
 * Rewriting history ...  to cleanup commit history
