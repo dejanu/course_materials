@@ -24,7 +24,7 @@ Nice video [Linus Torvalds & git](https://www.youtube.com/watch?v=idLyobOhtO4)
 
 **Staging area**: an intermediate location (which isn't part of the repository) where changes to files in the working tree are prepared before they're committed. It allows developers to select changes they intend to commit.
 
-**Branch**: a named series of linked commits,represents a distinct version of a project, the most recent commit within a branch is called the head
+**Branch**: a named series of linked commits, represents a distinct version of a project, the most recent commit within a branch is called the head
 
 **Merge**: the process of combining changes from one branch (or commit) into another. This integrates changes from one branch into another 	
 
@@ -43,11 +43,11 @@ git add ...
 git rev-list --objects --all
 git log --oneline
 ```
-* Create a snapshot
+* Commit
 
 ```bash
-# commit aka create tree object
-git commit -m 'mesage here`
+# commit or snapshot aka create tree object
+git commit -m 'mesage here'
 
 # send changes to remote repo
 git push
@@ -72,7 +72,7 @@ git revert <commit_sha>
 git revert HEAD~2..HEAD
 ```
 
-* Rewriting history ...  to cleanup commit history
+* Rewriting history ... to cleanup commit history
 
 ```bash
 # SQUASHING: manually interactive rebase aka combine multiple commits into one
@@ -80,6 +80,7 @@ git rebase -i HEAD~3 # last 3 commits
 
 # AMEND aka update the most recent commit message
 git commit --amend # interactive
+git commit --amend -m 'new commit message'
 ```
 
 * Bring changes to your branch

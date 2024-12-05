@@ -8,6 +8,10 @@ Materials for training and for **container-to-pod** masterclass (Container to Po
 
 * A setup of master and worker node [here](https://github.com/dejanu/devops_fundamentals/tree/main/jenkins-dockercompose#readme)
 
+## Quick Git tutorial
+
+* Git commands and scenarios [here](https://github.com/dejanu/devops_fundamentals/blob/main/gitdemo/readme.md)
+
 ## Usefull links
 
 * Gist with K8S upgrade steps 👉 [here](https://gist.github.com/dejanu/89ec2565d3a923a368f5dc046259e2b9)
