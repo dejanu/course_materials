@@ -71,7 +71,7 @@ jobs:
         context: "{{defaultContext}}:python_hello_app"
         push: true
         tags:
-          dejanualex/course:${{ env.IMAGE_TAG }}
+          dejanualex/devops:${{ env.IMAGE_TAG }}
           # docker.io/dejanualex/course:${{ env.IMAGE_TAG }}
 
         # tags: dejanualex/test:1.0
